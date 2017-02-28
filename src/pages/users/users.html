@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>users</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <my-user *ngFor="let user of users" [user]="user"></my-user>
+  </ion-list>
+</ion-content>
