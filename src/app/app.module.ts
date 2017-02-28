@@ -10,6 +10,10 @@ import { HeroesPage } from '../pages/heroes/heroes';
 
 import { MyUserComponent } from '../components/my-user/my-user';
 import { MyHeroComponent } from '../components/my-hero/my-hero';
+import { MyHighlightDirective } from '../directives/my-highlight/my-highlight';
+import { ReversePipe } from '../pipes/reverse';
+
+import { HeroeService } from '../providers/heroe-service';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,9 @@ import { MyHeroComponent } from '../components/my-hero/my-hero';
     UsersPage,
     HeroesPage,
     MyUserComponent,
-    MyHeroComponent
+    MyHeroComponent,
+    MyHighlightDirective,
+    ReversePipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,6 +42,9 @@ import { MyHeroComponent } from '../components/my-hero/my-hero';
     UsersPage,
     HeroesPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    HeroeService
+  ]
 })
 export class AppModule {}
