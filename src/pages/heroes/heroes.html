@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>heroes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <my-hero *ngFor="let hero of heroes" [hero]="hero"></my-hero>
+  </ion-list>
+  
+</ion-content>

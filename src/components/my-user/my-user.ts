@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { User } from '../../pages/models/user.model';
+import { User } from '../../models/user.model';
 import { AlertController } from 'ionic-angular';
 
 @Component({

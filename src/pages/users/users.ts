@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { User } from '../models/user.model';
+import { User } from '../../models/user.model';
 
 const USERS: User[] = [
   new User('assets/imgs/15.jpg', 'Camila', 'a@gmail.com'),
